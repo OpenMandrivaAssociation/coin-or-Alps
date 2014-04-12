@@ -1,0 +1,21 @@
+diff -up Alps-1.4.8/Makefile.in.orig Alps-1.4.8/Makefile.in
+--- Alps-1.4.8/Makefile.in.orig	2014-01-08 16:38:51.050973189 -0200
++++ Alps-1.4.8/Makefile.in	2014-01-08 16:39:36.777974940 -0200
+@@ -367,7 +367,7 @@ EXTRA_DIST = examples/Abc/AbcBranchActua
+ ########################################################################
+ pkgconfiglibdir = $(libdir)/pkgconfig
+ pkgconfiglib_DATA = alps.pc
+-addlibsdir = $(DESTDIR)$(datadir)/coin/doc/Alps
++addlibsdir = $(DESTDIR)$(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ 
+ ########################################################################
+ #                         Maintainer Stuff                             #
+@@ -376,7 +376,7 @@ addlibsdir = $(DESTDIR)$(datadir)/coin/d
+ # Files that are generated and should be cleaned with make distclean
+ DISTCLEANFILES = $(am__append_3) $(VPATH_DISTCLEANFILES)
+ DocFiles = README AUTHORS LICENSE
+-DocInstallDir = $(datadir)/coin/doc/$(PACKAGE_NAME)
++DocInstallDir = $(datadir)/doc/coin-or-$(PACKAGE_NAME)
+ all: all-recursive
+ 
+ .SUFFIXES:

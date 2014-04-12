@@ -1,0 +1,12 @@
+diff -up Alps-1.4.8/src/AlpsKnowledgeBrokerSerial.cpp.orig Alps-1.4.8/src/AlpsKnowledgeBrokerSerial.cpp
+--- Alps-1.4.8/src/AlpsKnowledgeBrokerSerial.cpp.orig	2014-01-08 16:40:38.784977314 -0200
++++ Alps-1.4.8/src/AlpsKnowledgeBrokerSerial.cpp	2014-01-08 16:40:46.760977620 -0200
+@@ -66,7 +66,7 @@ AlpsKnowledgeBrokerSerial::initializeSea
+ 	    }
+ 	    std::cout << "==  Build Date: " <<  __DATE__;
+ #ifdef ALPS_SVN_REV
+-	    std::cout << "\n==  Revision Number: " << ALPS_SVN_REV;
++	    /*std::cout << "\n==  Revision Number: " << ALPS_SVN_REV;*/
+ #endif
+ 	    std::cout << std::endl;
+     }
