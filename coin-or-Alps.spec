@@ -7,7 +7,7 @@ Summary:	COIN-OR High-Performance Parallel Search Framework
 Version:	1.4.10
 Release:	3%{?dist}
 License:	EPL
-URL:		http://projects.coin-or.org/%{module}
+URL:		https://projects.coin-or.org/%{module}
 Source0:	http://www.coin-or.org/download/pkgsource/CHiPPS/%{module}-%{version}.tgz
 Source1:	%{name}.rpmlintrc
 BuildRequires:	bzip2-devel
